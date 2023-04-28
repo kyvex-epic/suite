@@ -1,0 +1,14 @@
+i {
+  background-color: rgb(var(--primary-color));
+  border-radius: 50%;
+  cursor: pointer;
+  --ggs: 1.5;
+  transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+  background-color: rgba(var(--primary-color), 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/*# sourceMappingURL=icons.css.map */
