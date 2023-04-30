@@ -98,8 +98,8 @@ nav {
 }
 
 .title {
-  background: linear-gradient(135deg, #0000 18.75%, rgb(40, 117, 141) 0 31.25%, #0000 0),
-  repeating-linear-gradient(45deg, rgb(34,109,133) -6.25% 6.25%, rgb(38, 40, 141) 0 18.75%);
+  background: linear-gradient(135deg, #0000 18.75%, rgb(40, 117, 141) 31.25%, #0000 31.25%),
+  repeating-linear-gradient(45deg, rgb(34, 109, 133) -6.25%, rgb(38, 40, 141) 18.75%);
   border-radius: 1em;
   margin-bottom: 1em;
   display: flex;
@@ -126,7 +126,6 @@ nav {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  max-width: 1000px;
   margin: 0 auto;
 
   h1 {
@@ -147,8 +146,21 @@ nav {
 
     width: calc(100% - 2em);
     height: calc(100% - 2em);
-    background: linear-gradient(135deg, #0000 18.75%, #47d3ff 0 31.25%, #0000 0),
-    repeating-linear-gradient(45deg, #47d3ff -6.25% 6.25%, #474bff 0 18.75%);
+    background-size: 100% 100%;
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+    radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+    radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+    radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+    radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+    radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+    radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+    radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+    radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+    radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+    radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+    linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+
     margin: auto;
     border-radius: 4em;
 
@@ -167,6 +179,7 @@ nav {
 
 
 main {
+  min-height: 100vh;
   max-width: 1000px;
   margin: 1em auto;
 }

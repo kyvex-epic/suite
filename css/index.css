@@ -86,7 +86,7 @@ nav .nav__section ul li a:hover {
 }
 
 .title {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 18.75%, rgb(40, 117, 141) 0 31.25%, rgba(0, 0, 0, 0) 0), repeating-linear-gradient(45deg, rgb(34, 109, 133) -6.25% 6.25%, rgb(38, 40, 141) 0 18.75%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 18.75%, rgb(40, 117, 141) 31.25%, rgba(0, 0, 0, 0) 31.25%), repeating-linear-gradient(45deg, rgb(34, 109, 133) -6.25%, rgb(38, 40, 141) 18.75%);
   border-radius: 1em;
   margin-bottom: 1em;
   display: flex;
@@ -110,7 +110,6 @@ nav .nav__section ul li a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  max-width: 1000px;
   margin: 0 auto;
 }
 .hero h1 {
@@ -128,7 +127,9 @@ nav .nav__section ul li a:hover {
   position: absolute;
   width: calc(100% - 2em);
   height: calc(100% - 2em);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 18.75%, #47d3ff 0 31.25%, rgba(0, 0, 0, 0) 0), repeating-linear-gradient(45deg, #47d3ff -6.25% 6.25%, #474bff 0 18.75%);
+  background-size: 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), radial-gradient(18% 28% at 24% 50%, #cefaff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 18% 71%, rgba(255, 255, 255, 0.3490196078) 6%, rgba(7, 58, 255, 0) 100%), radial-gradient(70% 53% at 36% 76%, #73f2ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 15% 94%, white 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 34% 72%, white 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 35% 87%, white 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(31% 43% at 7% 98%, white 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(21% 37% at 72% 23%, rgba(211, 255, 109, 0.6117647059) 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(35% 56% at 91% 74%, rgba(138, 79, 255, 0.9607843137) 9%, rgba(7, 58, 255, 0) 100%), radial-gradient(74% 86% at 67% 38%, rgba(109, 255, 174, 0.9607843137) 24%, rgba(7, 58, 255, 0) 100%), linear-gradient(125deg, #4eb5ff 1%, #4c00fc 100%);
   margin: auto;
   border-radius: 4em;
   filter: brightness(0.8);
@@ -143,6 +144,7 @@ nav .nav__section ul li a:hover {
 }
 
 main {
+  min-height: 100vh;
   max-width: 1000px;
   margin: 1em auto;
 }
