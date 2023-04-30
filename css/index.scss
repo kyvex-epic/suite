@@ -223,13 +223,18 @@ main {
 
 
 .banner {
-  top: 0;
-  left: 0;
-  position: sticky;
-  width: 100%;
+
+  position: fixed;
+
+  bottom: 1em;
+  left: 1em;
+  padding: 0 1em;
+  border-radius: 1em;
+
   z-index: 1000;
   backdrop-filter: blur(10px);
-  background-color: rgba(var(--secondary-color), 0.8);
+  background-color: yellow;
+  color: black;
   text-align: center;
   margin: 0 auto;
 

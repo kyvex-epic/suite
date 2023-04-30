@@ -1,5 +1,4 @@
 @import url("./icons.css");
-
 :root {
   --primary-color: 31, 31, 31;
   --secondary-color: 43, 45, 48;
@@ -29,16 +28,13 @@ body {
   color: rgb(var(--tertiary-color));
   padding: 0 1em;
 }
-
 body::-webkit-scrollbar {
   width: 0.5em;
 }
-
 body::-webkit-scrollbar-track {
   background-color: rgba(var(--secondary-color), 0.8);
   border-radius: 1em;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: rgb(var(--tertiary-color));
   border-radius: 1em;
@@ -58,7 +54,6 @@ nav {
   justify-content: center;
   gap: 1em;
 }
-
 nav .nav__section {
   backdrop-filter: blur(4px);
   display: flex;
@@ -69,7 +64,6 @@ nav .nav__section {
   border-radius: 0.5em;
   box-shadow: 0 0 0.1em rgba(var(--tertiary-color), 0.5);
 }
-
 nav .nav__section ul {
   padding: 0.2em;
   margin: 0 1em;
@@ -77,11 +71,9 @@ nav .nav__section ul {
   display: flex;
   align-items: center;
 }
-
 nav .nav__section ul li {
   list-style: none;
 }
-
 nav .nav__section ul li a {
   text-decoration: none;
   font-size: 1.2em;
@@ -89,7 +81,6 @@ nav .nav__section ul li a {
   border-bottom: 2px solid transparent;
   transition: 0.2s;
 }
-
 nav .nav__section ul li a:hover {
   border-bottom: 2px solid rgb(var(--tertiary-color));
 }
@@ -102,7 +93,6 @@ nav .nav__section ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-
 .title h2 {
   color: rgb(var(--tertiary-color));
   font-size: 1.5em;
@@ -123,19 +113,16 @@ nav .nav__section ul li a:hover {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 .hero h1 {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 0.2em;
 }
-
 .hero h2 {
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
-
 .hero:before {
   content: "";
   position: absolute;
@@ -166,13 +153,11 @@ main {
   padding: 1em;
   margin-bottom: 1em;
 }
-
 .main__section .main__title {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-
 .main__section .main__text {
   font-size: 1em;
   font-weight: 500;
@@ -188,32 +173,31 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
 }
-
 .feature__grid .feature__title {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-
 .feature__grid .feature__item {
   background-color: rgba(var(--primary-color), 0.8);
   border-radius: 1em;
   padding: 1em;
   transition: 0.2s;
 }
-
 .feature__grid .feature__item:hover {
   background-color: rgba(var(--secondary-color), 1);
 }
 
 .banner {
-  top: 0;
-  left: 0;
-  position: sticky;
-  width: 100%;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  padding: 0 1em;
+  border-radius: 1em;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  background-color: rgba(var(--secondary-color), 0.8);
+  background-color: yellow;
+  color: black;
   text-align: center;
   margin: 0 auto;
 }
